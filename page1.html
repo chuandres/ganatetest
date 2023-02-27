@@ -7,19 +7,22 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>Test Cookie and Click tranking POST AFFILIATE PRO JESUS MILLAN</h1>
-
-		<a href="./page1.html">Pagar</a>
+		<h1>Pagado</h1>
 		<script
 			type="text/javascript"
 			id="pap_x2s6df8d"
 			src="https://jesusmillan.postaffiliatepro.com/scripts/a1jw2ul324g"
 		></script>
+
 		<script type="text/javascript">
 			PostAffTracker.setAccountId('default1');
-			try {
-				PostAffTracker.track();
-			} catch (err) {}
+
+			var sale = PostAffTracker.createAction('registerClientComission');
+			sale.setTotalCost('120.50');
+			sale.setOrderID('prueba_de_comision_por_deposito');
+			sale.setProductID('test product');
+
+			PostAffTracker.register();
 		</script>
 	</body>
 </html>
